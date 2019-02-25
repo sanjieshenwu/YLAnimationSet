@@ -1,32 +1,34 @@
 //
-//  ViewController.swift
-//  YLAnimationSet
+//  ViewAnimationVC.swift
+//  PodTest
 //
-//  Created by zyl on 2019/2/25.
+//  Created by zyl on 2019/2/19.
 //  Copyright © 2019 zyl. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewAnimationVC: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let dataList = ["UIView Animation"]
-    
+    let dataList = ["VisualViewDisplay",
+                    "ViewAnimationOptionsDisplay",
+                    "ViewAnimationTransformDisplay",
+                    "ViewAnimationTransitionDisplay",
+                    "ImageViewAnimationDisplay"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Swift Animation"
         
         let tableView = UITableView.init(frame: view.bounds, style: .plain)
         self.view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
-        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataList.count
     }
@@ -44,11 +46,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if indexPath.row == 0 {
-            let vc = ViewAnimationVC.init()
-            vc.title = dataList[indexPath.row]
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+        let classStr = self.dataList[indexPath.row]
+        // “项目名” + “.” + “类名” 获取类
+        let projectName = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String
+        let viewC = NSClassFromString(projectName! + "." + classStr) as! BaseViewController.Type
+        let vc = viewC.init()
+        vc.title = classStr
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
+
+
+
+
+
+
+
+
+
+
 

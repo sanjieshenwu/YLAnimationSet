@@ -14,6 +14,14 @@
 		36840C3622237A20000FAEBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36840C3422237A20000FAEBD /* LaunchScreen.storyboard */; };
 		36840C4122237A20000FAEBD /* YLAnimationSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36840C4022237A20000FAEBD /* YLAnimationSetTests.swift */; };
 		36840C4C22237A20000FAEBD /* YLAnimationSetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36840C4B22237A20000FAEBD /* YLAnimationSetUITests.swift */; };
+		36840C6222237B84000FAEBD /* ViewAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36840C5922237B84000FAEBD /* ViewAnimationVC.swift */; };
+		36840C6322237B84000FAEBD /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36840C5A22237B84000FAEBD /* Const.swift */; };
+		36840C6422237B84000FAEBD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36840C5B22237B84000FAEBD /* BaseViewController.swift */; };
+		36840C6522237B84000FAEBD /* ViewAnimationTransitionDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36840C5D22237B84000FAEBD /* ViewAnimationTransitionDisplay.swift */; };
+		36840C6622237B84000FAEBD /* ViewAnimationOptionsDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36840C5E22237B84000FAEBD /* ViewAnimationOptionsDisplay.swift */; };
+		36840C6722237B84000FAEBD /* VisualViewDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36840C5F22237B84000FAEBD /* VisualViewDisplay.swift */; };
+		36840C6822237B84000FAEBD /* ImageViewAnimationDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36840C6022237B84000FAEBD /* ImageViewAnimationDisplay.swift */; };
+		36840C6922237B84000FAEBD /* ViewAnimationTransformDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36840C6122237B84000FAEBD /* ViewAnimationTransformDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		36840C4722237A20000FAEBD /* YLAnimationSetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLAnimationSetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36840C4B22237A20000FAEBD /* YLAnimationSetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAnimationSetUITests.swift; sourceTree = "<group>"; };
 		36840C4D22237A20000FAEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36840C5922237B84000FAEBD /* ViewAnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimationVC.swift; sourceTree = "<group>"; };
+		36840C5A22237B84000FAEBD /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		36840C5B22237B84000FAEBD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		36840C5D22237B84000FAEBD /* ViewAnimationTransitionDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimationTransitionDisplay.swift; sourceTree = "<group>"; };
+		36840C5E22237B84000FAEBD /* ViewAnimationOptionsDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimationOptionsDisplay.swift; sourceTree = "<group>"; };
+		36840C5F22237B84000FAEBD /* VisualViewDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualViewDisplay.swift; sourceTree = "<group>"; };
+		36840C6022237B84000FAEBD /* ImageViewAnimationDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewAnimationDisplay.swift; sourceTree = "<group>"; };
+		36840C6122237B84000FAEBD /* ViewAnimationTransformDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimationTransformDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,10 @@
 			children = (
 				36840C2B22237A1E000FAEBD /* AppDelegate.swift */,
 				36840C2D22237A1E000FAEBD /* ViewController.swift */,
+				36840C5C22237B84000FAEBD /* Animation */,
+				36840C5B22237B84000FAEBD /* BaseViewController.swift */,
+				36840C5A22237B84000FAEBD /* Const.swift */,
+				36840C5922237B84000FAEBD /* ViewAnimationVC.swift */,
 				36840C2F22237A1E000FAEBD /* Main.storyboard */,
 				36840C3222237A20000FAEBD /* Assets.xcassets */,
 				36840C3422237A20000FAEBD /* LaunchScreen.storyboard */,
@@ -123,6 +143,18 @@
 				36840C4D22237A20000FAEBD /* Info.plist */,
 			);
 			path = YLAnimationSetUITests;
+			sourceTree = "<group>";
+		};
+		36840C5C22237B84000FAEBD /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				36840C5F22237B84000FAEBD /* VisualViewDisplay.swift */,
+				36840C5E22237B84000FAEBD /* ViewAnimationOptionsDisplay.swift */,
+				36840C6122237B84000FAEBD /* ViewAnimationTransformDisplay.swift */,
+				36840C5D22237B84000FAEBD /* ViewAnimationTransitionDisplay.swift */,
+				36840C6022237B84000FAEBD /* ImageViewAnimationDisplay.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +288,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36840C6422237B84000FAEBD /* BaseViewController.swift in Sources */,
 				36840C2E22237A1E000FAEBD /* ViewController.swift in Sources */,
+				36840C6822237B84000FAEBD /* ImageViewAnimationDisplay.swift in Sources */,
+				36840C6322237B84000FAEBD /* Const.swift in Sources */,
+				36840C6522237B84000FAEBD /* ViewAnimationTransitionDisplay.swift in Sources */,
+				36840C6622237B84000FAEBD /* ViewAnimationOptionsDisplay.swift in Sources */,
+				36840C6222237B84000FAEBD /* ViewAnimationVC.swift in Sources */,
+				36840C6922237B84000FAEBD /* ViewAnimationTransformDisplay.swift in Sources */,
 				36840C2C22237A1E000FAEBD /* AppDelegate.swift in Sources */,
+				36840C6722237B84000FAEBD /* VisualViewDisplay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
