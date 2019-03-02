@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let dataList = ["UIView Animation"]
+    let dataList = ["UIView Animation",
+                    "OCAnimation",
+                    "AppStoreHomeVC"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +48,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.row == 0 {
             let vc = ViewAnimationVC.init()
+            vc.title = dataList[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.row == 1 {
+            let vc = YLOCViewAnimationVC.init()
+            vc.title = dataList[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.row == 2 {
+            let vc = AppStoreHomeVC.init()
             vc.title = dataList[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
         }
